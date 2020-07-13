@@ -2,10 +2,11 @@
 
 {% block content %}
   <h1>About</h1>
-  <p>This is a template</p>
 
+  <h3>{{ title|capfirst|title }}</h3>
+  {{ my_html|safe }}
   <p>
-    {{ my_text }}, {{ my_number }}
+    {{ my_number }}
   </p>
 
   <ul>
