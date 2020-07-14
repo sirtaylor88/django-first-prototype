@@ -30,7 +30,7 @@ urlpatterns = [
     path('social/', social_view),
     path('create/', render_initial_data),
     path('products/', product_list_view, name='product-list'),
-    path('products/<int:id>/', dynamic_lookup_view, name='product'),
+    path('products/<int:id>/', dynamic_lookup_view, name='product-detail'),
     path('products/<int:id>/delete/', product_delete_view, name='product-delete'),
     path('admin/', admin.site.urls),
 ]
