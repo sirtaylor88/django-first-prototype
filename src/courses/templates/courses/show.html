@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="/courses"><-- Back</a>
+  <h1>{{ object.id }} - {{ object.title }}</h1>
+  <a href="/courses/{{ object.id }}/delete/">Delete this course</a>
+{% endblock %}
